@@ -1,6 +1,6 @@
-## connect me
+## Connect_me
 
-a professional social media app
+A Professional Social Media App
 
 ```bash
 /* Run the project */
