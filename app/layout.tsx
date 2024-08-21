@@ -21,7 +21,7 @@ export default function RootLayout({ children }: Readonly<IChildren>) {
     <html lang="en">
       <body
         className={cn(
-          "min-h-screen bg-background font-sans antialiased",
+          "bg-slate-100 font-sans antialiased flex",
           fontSans.variable
         )}
       >
