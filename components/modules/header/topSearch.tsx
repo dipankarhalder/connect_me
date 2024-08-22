@@ -3,7 +3,7 @@ import { Input } from "@/components/ui/input";
 
 export const TopSearch = () => {
   return (
-    <div className="w-[400px] relative mr-8 relative">
+    <div className="w-[320px] relative relative">
       <Search className="absolute top-2.5 left-2.5 text-slate-300" size={20} />
       <Input
         type="text"
