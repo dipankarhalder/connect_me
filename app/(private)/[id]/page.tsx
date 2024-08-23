@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import { IProfileProps } from "@/interface";
 import { ProfileLeftContent } from "@/components/modules/profile/profileLeftContent";
+import { ProfileRightContent } from "@/components/modules/profile/profileRightContent";
 
 export default async function ProfileDetails({ params }: IProfileProps) {
   if (!params.id) {
@@ -10,7 +11,7 @@ export default async function ProfileDetails({ params }: IProfileProps) {
   return (
     <div className="flex w-full mt-5 gap-5">
       <ProfileLeftContent profileName={params.id} />
-      <div className="p-4 bg-white rounded-md shadow w-1/4">sdkjfnjs</div>
+      <ProfileRightContent />
     </div>
   );
 }
