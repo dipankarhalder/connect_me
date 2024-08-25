@@ -4,7 +4,9 @@ export const ProContact = ({ profileName }: any) => {
   return (
     <div className="flex flex-col w-2/4">
       <p className="flex items-center text-sm font-medium mb-1 text-sky-600">
-        @{profileName}
+        <Link href="/" className="hover:underline">
+          https://connectme.com/{profileName}
+        </Link>
       </p>
       <h6 className="text-md font-medium text-slate-500 mb-1">
         Karnataka, Bengaluru, India.

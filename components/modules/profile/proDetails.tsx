@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export const ProDetails = () => {
   const officeLogo =
@@ -10,22 +11,26 @@ export const ProDetails = () => {
         Sr. Software Engineer (LTIMindtree, @Ex-BORN Group, @Ex-Springrole,
         @Ex-Digital Aptech)
       </h5>
-      <div className="flex justify-end w-2/4 pr-6">
-        <Image
-          src={officeLogo}
-          alt="LTIMindtree"
-          width={48}
-          height={48}
-          priority
-          className="rounded-md"
-        />
-        <div className="flex flex-col ml-3">
-          <h5 className="font-semibold text-sm text-slate-600 mb-1">
-            LTIMindtree Limited.
-          </h5>
-          <p className="font-semibold text-xs text-slate-500">
-            Kolkata, West Bengal.
-          </p>
+      <div className="flex flex-col w-2/4 pr-6">
+        <div className="flex justify-end">
+          <Image
+            src={officeLogo}
+            alt="LTIMindtree"
+            width={38}
+            height={38}
+            priority
+            className="rounded-md"
+          />
+          <div className="flex flex-col ml-3">
+            <h5 className="font-semibold text-sm text-indigo-700 mb-1">
+              <Link href="/" className="hover:underline">
+                LTIMindtree Limited.
+              </Link>
+            </h5>
+            <p className="font-semibold text-xs text-slate-500">
+              Kolkata, West Bengal.
+            </p>
+          </div>
         </div>
       </div>
     </div>
